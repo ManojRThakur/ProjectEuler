@@ -37,7 +37,6 @@ public class Problem4 {
 		while(!isValid) {
 			seed--;
 			startingNumber = (int)(seed * Math.pow(10, power)) + findReverseOfANumber(seed, power);
-			System.out.println(startingNumber);
 			if(startingNumber < 0)
 				return -1;
 			isValid = convertToForm(startingNumber, power);
